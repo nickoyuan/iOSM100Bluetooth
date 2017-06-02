@@ -1,0 +1,6 @@
+framework module Pods_elecTests {
+  umbrella header "Pods-elecTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

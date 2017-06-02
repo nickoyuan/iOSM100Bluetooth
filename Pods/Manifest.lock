@@ -1,0 +1,23 @@
+PODS:
+  - Charts (3.0.1):
+    - Charts/Core (= 3.0.1)
+  - Charts/Core (3.0.1)
+  - GaugeView (0.1.4)
+  - PopupDialog (0.5.3)
+  - Toast-Swift (2.0.0)
+
+DEPENDENCIES:
+  - Charts
+  - GaugeView
+  - PopupDialog (~> 0.5)
+  - Toast-Swift (~> 2.0.0)
+
+SPEC CHECKSUMS:
+  Charts: 0e84f4418e87dad6a9edde221fba37ebb51d3ba7
+  GaugeView: c086ed105981d51d16ad903fb03138a1ae718e16
+  PopupDialog: 533dd564f8781633375505b9fbd406f8f146ccc9
+  Toast-Swift: 5b2f8f720f7e78e48511f693df1f9c9a6e38a25a
+
+PODFILE CHECKSUM: 2b01e85ef586069e8e8e5598868080a9a58e2ab3
+
+COCOAPODS: 1.2.0

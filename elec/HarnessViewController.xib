@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HarnessViewController" customModule="elec" customModuleProvider="target">
+            <connections>
+                <outlet property="tableview" destination="JwK-e0-LOX" id="byw-ob-4q5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="kj3-Mz-Fdq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S9h-rP-vFt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="93"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harness Check Instructions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKL-UR-pPL">
+                            <rect key="frame" x="47.5" y="34" width="279.5" height="25.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.28628472822222217" blue="0.29817998275185176" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="93" id="2nd-BA-CwS"/>
+                        <constraint firstItem="qKL-UR-pPL" firstAttribute="centerX" secondItem="S9h-rP-vFt" secondAttribute="centerX" id="A3I-eY-TM8"/>
+                        <constraint firstItem="qKL-UR-pPL" firstAttribute="centerY" secondItem="S9h-rP-vFt" secondAttribute="centerY" id="O3e-U1-CiC"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JwK-e0-LOX">
+                    <rect key="frame" x="0.0" y="93" width="375" height="407"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="407" id="i8K-W0-XIw"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="nmf-BJ-DZj"/>
+                        <outlet property="delegate" destination="-1" id="p9D-h3-W14"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JwK-e0-LOX" firstAttribute="top" secondItem="S9h-rP-vFt" secondAttribute="bottom" id="5Ej-Ia-1Rr"/>
+                <constraint firstAttribute="trailing" secondItem="JwK-e0-LOX" secondAttribute="trailing" id="OHv-29-1Pd"/>
+                <constraint firstItem="S9h-rP-vFt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XVi-3Z-mmb"/>
+                <constraint firstItem="S9h-rP-vFt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Zu6-qU-MB7"/>
+                <constraint firstAttribute="trailing" secondItem="S9h-rP-vFt" secondAttribute="trailing" id="jnd-Qi-s2u"/>
+                <constraint firstAttribute="bottom" secondItem="JwK-e0-LOX" secondAttribute="bottom" id="lg3-Mn-DEC"/>
+                <constraint firstItem="JwK-e0-LOX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="v9Q-Iz-P7p"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-133.5" y="140"/>
+        </view>
+    </objects>
+</document>

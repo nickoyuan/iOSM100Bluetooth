@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RatingViewController" customModule="elec" customModuleProvider="target">
+            <connections>
+                <outlet property="segment" destination="5oJ-GO-5cN" id="PHe-z1-vFs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="182"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warning! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h32-WU-afU">
+                    <rect key="frame" x="10" y="20" width="96" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PLEASE Only Select Manual Option if you understand what you are doing ! Click CANCEL to return to AUTOMATIC" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60i-4k-LN8">
+                    <rect key="frame" x="16" y="49" width="258" height="64"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5oJ-GO-5cN">
+                    <rect key="frame" x="10" y="123" width="270" height="29"/>
+                    <segments>
+                        <segment title="1"/>
+                        <segment title="2"/>
+                        <segment title="3"/>
+                        <segment title="4"/>
+                    </segments>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5oJ-GO-5cN" secondAttribute="bottom" constant="31" id="3gS-ZL-Nn7"/>
+                <constraint firstItem="5oJ-GO-5cN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4H0-9C-HcF"/>
+                <constraint firstAttribute="trailing" secondItem="5oJ-GO-5cN" secondAttribute="trailing" constant="10" id="4Wq-vo-uKV"/>
+                <constraint firstItem="h32-WU-afU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="6Xg-Hk-Ey7"/>
+                <constraint firstItem="5oJ-GO-5cN" firstAttribute="top" secondItem="60i-4k-LN8" secondAttribute="bottom" constant="27" id="Gt2-sO-Sbr"/>
+                <constraint firstItem="60i-4k-LN8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="KgJ-u5-C88"/>
+                <constraint firstItem="h32-WU-afU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="SUz-qs-U8y"/>
+                <constraint firstItem="5oJ-GO-5cN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="VEu-es-eqC"/>
+                <constraint firstAttribute="trailing" secondItem="60i-4k-LN8" secondAttribute="trailing" constant="10" id="ee7-Uo-ffX"/>
+                <constraint firstAttribute="trailing" secondItem="h32-WU-afU" secondAttribute="trailing" constant="184" id="h7z-cb-UXf"/>
+                <constraint firstItem="60i-4k-LN8" firstAttribute="top" secondItem="h32-WU-afU" secondAttribute="bottom" constant="8" id="l4m-Zf-CTF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33" y="91.5"/>
+        </view>
+    </objects>
+</document>
